@@ -1,8 +1,8 @@
-Name: Brice Allard /n
-Date: 01/23/2018 /n
-Assignment: Program 1 /n
-Description: /n
-    Singly linked list with frontsert and orderedSert implemented /n
-
-Files:
+Name: Brice Allard
+Date: 01/23/2018
+Assignment: Program 1
+Description:
+    Simple singly linked list with both fronsert and orderedsert implemented.
+    
+File:
     main.cpp
