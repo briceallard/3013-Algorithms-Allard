@@ -1,3 +1,10 @@
+/* 
+Brice Allard
+01/23/2018
+Program 1
+OrderedSert
+*/
+
 #include <iostream>
 #include <ctime>
 
