@@ -16,9 +16,7 @@ using namespace std;
 
 //http://www.webgraphviz.com/
 
-//************************************************************************
-// 
-//************************************************************************
+// counts the number of nodes in the search tree
 int BSTree::count(node *root)
 {
 	if (!root)
@@ -31,6 +29,7 @@ int BSTree::count(node *root)
 	}
 }
 
+// insert a node into the tree
 void BSTree::insert(node *&root, node *&temp)
 {
 	if (!root)
@@ -50,6 +49,7 @@ void BSTree::insert(node *&root, node *&temp)
 	}
 }
 
+// prints given node showing subtree also
 void BSTree::print_node(node *n, string label = "")
 {
 	if (label != "")
@@ -104,6 +104,7 @@ node *BSTree::minValueNode(node *root)
 	return current;
 }
 
+// Deletes node that matches given key
 node *BSTree::deleteNode(node *&root, int key)
 {
 	if (!root)
@@ -150,6 +151,7 @@ node *BSTree::deleteNode(node *&root, int key)
 	return root;
 }
 
+// Returns height of tree
 int BSTree::height(node *root)
 {
 	if (!root)
@@ -256,35 +258,43 @@ void BSTree::GraphVizMakeConnections(node *nodePtr, ofstream &VizOut)
 	}
 }
 
+// constructor
 BSTree::BSTree()
 {
 	root = NULL;
 }
+
+//destructor
 BSTree::~BSTree()
 {
 }
 
+// returns number of nodes in tree
 int BSTree::count()
 {
 	return count(root);
 }
 
+// inserts new node with given value
 void BSTree::insert(int x)
 {
 	node *temp = new node(x);
 	insert(root, temp);
 }
 
+// Deletes the node that matches the key
 void BSTree::deleteNode(int key)
 {
 	root = deleteNode(root, key);
 }
 
+// Given two values, returns the minimum
 void BSTree::minValue()
 {
 	print_node(minValueNode(root), "minVal");
 }
 
+// Determines height of the search tree
 int BSTree::height(int key = -1)
 {
 	if (key > 0)
@@ -298,6 +308,7 @@ int BSTree::height(int key = -1)
 	return 0;
 }
 
+// Returns top of tree
 int BSTree::top()
 {
 	if (root)
