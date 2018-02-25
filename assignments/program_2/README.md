@@ -8,8 +8,7 @@ Description:
     - Fix the delete method so that it can handle deleting the root node
         when it doesn't have a left or a right child.
 
-Files:
-
+- Files:
     - `main.cpp`
     - `BSTree.cpp`
     - `BSTree.h` 
