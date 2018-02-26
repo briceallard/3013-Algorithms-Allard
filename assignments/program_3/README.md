@@ -11,11 +11,6 @@ Description:
 ***Data Structures Part:*** <br>
 >After we generate about 10000 names, we are going to compare the performance of a Binary Search Tree vs an AVL tree when it comes to finding those named components in each tree.
 
-- Files:
-    - `main.cpp`
-    - `BSTree.cpp`
-    - `BSTree.h` 
-    - `README.md` 
 Files:
     - `word_files`
         - `nouns.txt`
