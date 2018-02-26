@@ -12,12 +12,17 @@ Description:
 >After we generate about 10000 names, we are going to compare the performance of a Binary Search Tree vs an AVL tree when it comes to finding those named components in each tree.
 
 - Files:
-    -- `word_files`
-    ---`nouns.txt`
-    ---`adverbs.txt`
-    ---`animals.txt`
-    ---`adjectives.txt`
-    ---`verbs.txt`
-    -- `generate_words.cpp`
-    -- `README.md`
-    -- `tenthousandwords.txt`
+    - `main.cpp`
+    - `BSTree.cpp`
+    - `BSTree.h` 
+    - `README.md` 
+- Files:
+    - `word_files`
+    --`nouns.txt`
+    --`adverbs.txt`
+    --`animals.txt`
+    --`adjectives.txt`
+    --`verbs.txt`
+    - `generate_words.cpp`
+    - `README.md`
+    - `tenthousandwords.txt`
