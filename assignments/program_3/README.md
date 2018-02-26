@@ -12,6 +12,7 @@ Description:
 >After we generate about 10000 names, we are going to compare the performance of a Binary Search Tree vs an AVL tree when it comes to finding those named components in each tree.
 
 Files:
+-word_files
     - word_files
     --nouns.txt
     --adverbs.txt
