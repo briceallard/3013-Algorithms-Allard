@@ -17,12 +17,12 @@ Description:
     - `BSTree.h` 
     - `README.md` 
 - Files:
-    - `word_files`
-    --`nouns.txt`
-    --`adverbs.txt`
-    --`animals.txt`
-    --`adjectives.txt`
-    --`verbs.txt`
-    - `generate_words.cpp`
-    - `README.md`
-    - `tenthousandwords.txt`
+    `word_files`
+    -`nouns.txt`
+    -`adverbs.txt`
+    -`animals.txt`
+    -`adjectives.txt`
+    -`verbs.txt`
+    `generate_words.cpp`
+    `README.md`
+    `tenthousandwords.txt`
