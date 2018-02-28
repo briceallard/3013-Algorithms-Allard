@@ -1,3 +1,26 @@
+//****************************************************************************
+// Program Name: Crazy Word Creator
+// Files: AVLTree.cpp, AVLTree.h, BSTree.cpp, BSTree.h,
+//		  generate_words.cpp, tenthousandwords.txt, analyze_trees.cpp,
+//		  adjectives.txt, adverbs.txt, animals.txt, nouns.txt, verbs.txt
+// Author: Brice Allard
+// Email: briceallard@gmail.com
+// Description:
+//			  Part 1:
+//			  - creates 10000 crazy words without duplicates
+//			  - each crazy words consist of 3-5 word parts
+//			  - each crazy words consist of adjectives, nouns, animals
+//			  - created words are stored in a file
+//			  Part 2:
+//			  - compare the performance of AVL Tree and Binary Search Tree
+//			  - adjectives, adverbs, animals, nouns, verbs are inserted
+//			    then, read the word parts from the list of 10000 crazy words
+//			  - search for each word parts in both trees
+//			    then count the number of comparisons made
+//			    at the same time, identify the type of the word part
+//			    then finally displays the summary
+//****************************************************************************
+
 #include <vector>
 #include <string>
 #include <map>
@@ -36,6 +59,14 @@ int main() {
 	return 0;
 }
 
+//************************************************************************
+// Function Name:	fillVector
+// Parameter:		vector<string>, string filename (for reading)
+// Returns:			void
+// Description:
+//		Gathers and loads information read in from the input file 
+//		(filename) into a vector.
+//************************************************************************
 void fillVector(vs& v, string filename) {
 	ifstream infile;
 	infile.open(filename);
@@ -55,10 +86,27 @@ void fillVector(vs& v, string filename) {
 	infile.close();
 }
 
+//************************************************************************
+// Function Name:	generateRandom
+// Parameter:		vector<string>
+// Returns:			int
+// Description:
+//		Generates a random number based on the size of the vector passed
+//		in (remains within boundary limits of vector size)
+//************************************************************************
 int generateRandom(vs& v) {
 	return rand() % v.size();
 }
 
+//************************************************************************
+// Function Name:	getWord
+// Parameter:		vector<string> x5
+// Returns:			string
+// Description:
+//		Grabs random word from vector based on random generator
+//		(Can consist of Adjectives, Nounds, Verbs, Adverbs, or Animals)
+//		and builds a string combining 3-5 of the words generated
+//************************************************************************
 string getWord(vs& adj, vs& noun, vs& verb, vs& adv, vs& anim) {
 	int random = rand() % 5 + 1;
 	string word = "";
@@ -120,10 +168,19 @@ string getWord(vs& adj, vs& noun, vs& verb, vs& adv, vs& anim) {
 	}
 }
 
+//************************************************************************
+// Function Name:	getString
+// Parameter:		vector<string> x5
+// Returns:			void
+// Description:
+//		Outputs random strings generated from above function into
+//		outfile. Each string is input and verified in a MAP to ensure
+//		no duplicates.
+//************************************************************************
 void getString(vs& adj, vs& noun, vs& verb, vs& adv, vs& anim) {
 	
 	ofstream outfile;
-	outfile.open("word_files/tenthousandwords.txt");
+	outfile.open("tenthousandwords.txt");
 
 	wordMap wm;
 	it iter;
