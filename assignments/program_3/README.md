@@ -21,3 +21,28 @@ Description:
     - `generate_words.cpp`
     - `README.md`
     - `tenthousandwords.txt`
+
+**Output**
+```
+AVL Tree -
+Adjectives loaded: 15571
+Adverbs loaded: 3237
+Animals loaded: 235
+Nouns loaded: 53737
+Verbs loaded: 12018
+BS Tree -
+Adjectives loaded: 15571
+Adverbs loaded: 3237
+Animals loaded: 235
+Nouns loaded: 53737
+Verbs loaded: 12018
+
+Total Comparisons -
+BST Comparisons = 685812
+AVL Comparisons = 477774
+Number of Adjectives = 10937
+Number of Adverbs = 3650
+Number of Nounds = 4409
+Number of Verbs = 0
+Elapsed time: 2290.63s
+```
