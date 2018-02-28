@@ -6,19 +6,19 @@
 // Author: Brice Allard
 // Email: briceallard@gmail.com
 // Description:
-//			  Part 1:
-//			  - creates 10000 crazy words without duplicates
-//			  - each crazy words consist of 3-5 word parts
-//			  - each crazy words consist of adjectives, nouns, animals
-//			  - created words are stored in a file
-//			  Part 2:
-//			  - compare the performance of AVL Tree and Binary Search Tree
-//			  - adjectives, adverbs, animals, nouns, verbs are inserted
-//			    then, read the word parts from the list of 10000 crazy words
-//			  - search for each word parts in both trees
-//			    then count the number of comparisons made
-//			    at the same time, identify the type of the word part
-//			    then finally displays the summary
+// 	Part 1:
+//	- creates 10000 crazy words without duplicates
+//	- each crazy words consist of 3-5 word parts
+//	- each crazy words consist of adjectives, nouns, animals
+//	- created words are stored in a file
+//	Part 2:
+//	- compare the performance of AVL Tree and Binary Search Tree
+//	- adjectives, adverbs, animals, nouns, verbs are inserted
+//	  then, read the word parts from the list of 10000 crazy words
+//	- search for each word parts in both trees
+//	  then count the number of comparisons made
+//	  at the same time, identify the type of the word part
+//	  then finally displays the summary
 //****************************************************************************
 
 #include <vector>
