@@ -1,5 +1,4 @@
-# **Brice Allard**
-# **3013 - Algorithms**
+# *Brice Allard*
 ## Files
   * main.cpp
   * graph.cpp
