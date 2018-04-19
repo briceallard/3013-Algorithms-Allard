@@ -1,4 +1,5 @@
-# **Shady Boukhary**
+# **Brice Allard**
+# **3013 - Algorithms**
 ## Files
   * main.cpp
   * graph.cpp
