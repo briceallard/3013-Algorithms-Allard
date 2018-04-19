@@ -1,11 +1,11 @@
-# *Brice Allard*
 ## Files
   * main.cpp
   * graph.cpp
   * graph.h
   * distance.h
   * filtered_cities.csv
-  * adjacency.txt
+  * results.txt
+  * graphViz.dat
 ## Description
 * Fills a graph with vertices of cities with no edges, then connects the cities with a specified number of edges to the closest cities around starting from a specified city.
 
